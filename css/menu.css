@@ -1,0 +1,8 @@
+.flex-container {
+    display: flex;
+    background-color: brown;
+}
+.flex_container > *{
+    flex-direction: row;
+    flex-wrap: wrap;
+}

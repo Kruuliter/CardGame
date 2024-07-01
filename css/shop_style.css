@@ -1,0 +1,17 @@
+@import url("card_style.css");
+
+.cards_sell{
+    width: 100%;
+    min-height: calc(var(--height_card)*4 + 3*40px);
+    background-color: bisque;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.cards_sell > .sell{
+    min-width: calc(var(--width_card) + 10px);
+    width: calc(1/8*100% - 10px);
+    margin: 0 10px;
+    padding: 10px;
+}

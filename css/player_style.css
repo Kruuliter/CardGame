@@ -1,0 +1,31 @@
+:root {
+    --width_user: 130px;
+    --height_user: 150px;
+}
+
+.user {
+    position: relative;
+    width: var(--width_user);
+    height: var(--height_user);
+    background-size: var(--width_user) var(--height_user);
+}
+
+.user_nickname,.user_settings{
+    position: absolute;
+}
+
+.user_settings{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    bottom: 14%;
+    left: 14%;
+    right: 14%;
+    justify-content: space-around;
+}
+
+.user_nickname{
+    bottom: 1%;
+    left: 17%;
+    right: 17%;
+}

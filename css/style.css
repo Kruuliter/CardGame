@@ -1,0 +1,22 @@
+* {
+    outline: none !important
+}
+
+.dropdown-custom > .dropdown-menu {
+    min-width:220px;
+    padding:15px;
+}
+
+body {
+    margin: 0 auto;
+    width: 1000px;
+}
+a {
+    color: grey;
+    text-decoration: none;
+    border-bottom: 1px dotted grey;
+}
+a:hover {
+    text-decoration: underline;
+    border-bottom: 0px;
+}

@@ -1,0 +1,70 @@
+.boxMessages{
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    background-color: azure;
+    display: flex;
+}
+
+.boxMessages > div{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.groups, .allMessages{
+    border-width: 4px;
+    border-style: groove;
+    border-color: black;
+}
+
+.messages, .group{
+    border-bottom: 4px groove black;
+    border-top: 4px groove black;
+}
+
+.containerMessage{
+    border-width: 1px;
+    border-style: inherit;
+    border-color: black;
+}
+
+.groups{
+    min-width: 100px;
+    width: 20%;
+}
+
+.allMessages{
+    min-width: 400px;
+    width: 80%;
+    min-height: 300px;
+    height: 60%;
+}
+
+.dataUsers{
+    display: flex;
+    grid-gap: 10px;
+}
+
+.messages{
+    display: flex;
+    min-height: 270px;
+    max-height: 90%;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.enterMessage{
+    margin-left: 4px;
+    max-height: 14%;
+}
+
+textarea {
+	resize: none;
+	width: 70%;
+	height: 10%;
+}
+
+.dataUsers > . {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}

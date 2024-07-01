@@ -1,0 +1,83 @@
+@import url("card_style.css");
+@import url("player_style.css");
+
+.flex-battle {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    flex-wrap: wrap;
+    grid-gap: calc(var(--element_size) * 0.5);
+    min-width: 600px;
+}
+
+.flex-battle > *{
+    flex-direction: row;
+}
+
+#battle_two_players{
+    width: 80%;
+
+}
+
+#player{
+    height: calc((var(--element_size) * 0.5) + var(--height_card));
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+}
+
+#battle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-style: ridge;
+    border-color: coral;
+    border-width: 3px;
+    width: 100%;
+}
+
+#battle #history{
+    width: 20%;
+    min-width: 200px;
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+}
+
+#history{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player{
+    height: calc((var(--element_size) * 0.5) + var(--height_card));
+    display: flex;
+    width: auto;
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#player_status{
+    width: 20%;
+    min-width: 200px;
+    display: flex;
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+}
+
+#player_status > #user{
+    margin: auto;
+    color: white;
+}
+
+.cards{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}

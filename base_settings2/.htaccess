@@ -1,0 +1,5 @@
+# Кодировка страниц
+AddDefaultCharset UTF-8
+
+Order Deny,Allow
+Deny from all

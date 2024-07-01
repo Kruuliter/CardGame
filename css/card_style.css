@@ -1,0 +1,113 @@
+:root {
+    --width_card: 127.5px;
+    --height_card: 170px;
+    --element_size: 40px;
+}
+
+#card_frame,#image_card,#frame_background,#image_card_none{
+    width: var(--width_card);
+    height: var(--height_card);
+    background-repeat: no-repeat;
+}
+
+#image_card_none{
+    border-width: 2px;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 10px;
+}
+
+#frame_background{
+    height: calc((var(--height_card) * 0.15) + var(--height_card));
+    width: calc((var(--width_card) * 0.15) + var(--width_card));
+    padding: 5px 5px 5px 5px;
+    padding-left: calc(var(--width_card) * 0.05);
+    padding-top: calc(var(--height_card) * 0.045);
+    padding-bottom: calc(var(--height_card) * 0.07);
+    padding-right: calc(var(--width_card) * 0.05);
+}
+
+#card_frame{
+    position: relative;
+    background-image: url(https://media.discordapp.net/attachments/930046306834087996/1046023803542708334/card.png);
+    background-size: var(--width_card) var(--height_card);
+    display: flex;
+    flex-direction: column;
+}
+
+#image_card{
+    background-position: center 2%;
+    background-size: 73.33% 67.5%;
+}
+
+.mana,.hp,.attack{
+    color: white;
+    display: table;
+    width: var(--element_size);
+    height: var(--element_size);
+    text-align: center;
+    background-size: var(--element_size) var(--element_size);
+    background-repeat: no-repeat;
+}
+
+.mana > div,.hp > div,.attack > div{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.name_card{
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.settings_up,.settings_center,.settings_down{
+    display: flex;
+    flex-direction: row;
+}
+
+.settings_up{
+    justify-content: flex-start;
+    margin-top: -0.25%;
+}
+
+.settings_center{
+    position: absolute;
+    max-height: 20%;
+    top: 67%;
+    left: 6.5%;
+    right: 6.5%;
+    overflow: hidden;
+}
+
+.settings_down{
+    margin-top: auto;
+    margin-bottom: -3.5%;
+}
+
+.settings_up > .mana{
+    background-image: url(https://media.discordapp.net/attachments/930046306834087996/1046023802909372456/mana.png);
+    margin-left: -5%;
+    margin-top: -5%;
+}
+
+.settings_down > .attack{
+    background-image: url(https://media.discordapp.net/attachments/930046306834087996/1046023803215560804/attack.png);
+    margin-left: -6.5%;
+    margin-bottom: -6.5%;
+}
+
+.settings_down > .hp{
+    margin-left: auto;
+    background-image: url(https://media.discordapp.net/attachments/930046306834087996/1046023802284417024/hp.png);
+    margin-right: -6.5%;
+    margin-bottom: -6.5%;
+}
+
+.id, .move{
+    display: none;
+}
