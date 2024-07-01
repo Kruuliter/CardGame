@@ -1,2 +1,3 @@
 # CardGame
  
+Данный проект был разработан с использованием программы [Open Server](https://ospanel.io). Для корректного функционирования и просмотра результатов работы, необходимо импортировать файл [game_curs.sql](https://github.com/Kruuliter/CardGame/blob/main/scriptBD/game_curs.sql). При необходимости следует внести изменения в настройки подключения к базе данных в файле [connect.php](https://github.com/Kruuliter/CardGame/blob/main/bd/connect.php).

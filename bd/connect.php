@@ -6,10 +6,10 @@ class db {
     public $memory_pek_start; # пиковое потребление памяти при выполнении скрипта
     public $error_connect;
 
-    const DB_HOST = "localhost";
-    const DB_USER = "root";
-    const DB_PASS = "root";
-    const DB_NAME = "game_curs";
+    const DB_HOST = "localhost"; # хост
+    const DB_USER = "root"; # имя пользователя
+    const DB_PASS = "root"; # пароль пользователя
+    const DB_NAME = "game_curs"; # имя базы данных
 
     private $counter_mysql = 0; # Количество запросов
     private $timer_mysql = 0; # Общее время запросов
